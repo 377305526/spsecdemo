@@ -1,0 +1,306 @@
+2022-08-24 11:49:39.469 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - Starting KeyfreePlusApplication using Java 1.8.0_162 on Nipppppp with PID 12480 (E:\keyfreeplus\keyfreeplus\target\classes started by Administrator in E:\keyfreeplus\keyfreeplus)
+2022-08-24 11:49:39.474 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - The following 1 profile is active: "dev"
+2022-08-24 11:49:39.576 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 11:49:39.576 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 11:49:41.218 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] INFO  - Tomcat initialized with port(s): 8798 (http)
+2022-08-24 11:49:41.219 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-08-24 11:49:41.219 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2022-08-24 11:49:41.220 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-08-24 11:49:41.220 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-24 11:49:42.271 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2022-08-24 11:49:42.279 - org.apache.coyote.http11.Http11NioProtocol [restartedMain] INFO  - Initializing ProtocolHandler ["http-nio-8798"]
+2022-08-24 11:49:42.280 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Starting service [Tomcat]
+2022-08-24 11:49:42.280 - org.apache.catalina.core.StandardEngine [restartedMain] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:49:42.407 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/keyfreeplus] [restartedMain] INFO  - Initializing Spring embedded WebApplicationContext
+2022-08-24 11:49:42.407 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] INFO  - Root WebApplicationContext: initialization completed in 2830 ms
+2022-08-24 11:49:42.621 - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionMapper' defined in file [E:\keyfreeplus\keyfreeplus\target\classes\cn\com\reformer\mapper\AdminPermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+2022-08-24 11:49:42.621 - com.alibaba.druid.pool.DruidDataSource [restartedMain] INFO  - {dataSource-0} closing ...
+2022-08-24 11:49:42.626 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Stopping service [Tomcat]
+2022-08-24 11:49:42.647 - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 11:49:42.685 - org.springframework.boot.SpringApplication [restartedMain] ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionMapper' defined in file [E:\keyfreeplus\keyfreeplus\target\classes\cn\com\reformer\mapper\AdminPermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at cn.com.reformer.KeyfreePlusApplication.main(KeyfreePlusApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionMapper' defined in file [E:\keyfreeplus\keyfreeplus\target\classes\cn\com\reformer\mapper\AdminPermissionMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 49 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/mybatis/logging/LoggerFactory
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.<clinit>(MybatisSqlSessionFactoryBean.java:93)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:160)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$f9fb764e.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$f9fb764e$$FastClassBySpringCGLIB$$37e23e23.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$f9fb764e.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.mybatis.logging.LoggerFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 common frames omitted
+2022-08-24 11:51:03.967 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - Starting KeyfreePlusApplication using Java 1.8.0_162 on Nipppppp with PID 13616 (E:\keyfreeplus\keyfreeplus\target\classes started by Administrator in E:\keyfreeplus\keyfreeplus)
+2022-08-24 11:51:03.969 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - The following 1 profile is active: "dev"
+2022-08-24 11:51:04.009 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 11:51:04.009 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 11:51:05.192 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] INFO  - Tomcat initialized with port(s): 8798 (http)
+2022-08-24 11:51:05.193 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-08-24 11:51:05.193 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2022-08-24 11:51:05.193 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-08-24 11:51:05.194 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-24 11:51:06.239 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2022-08-24 11:51:06.248 - org.apache.coyote.http11.Http11NioProtocol [restartedMain] INFO  - Initializing ProtocolHandler ["http-nio-8798"]
+2022-08-24 11:51:06.249 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Starting service [Tomcat]
+2022-08-24 11:51:06.249 - org.apache.catalina.core.StandardEngine [restartedMain] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:51:06.337 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/keyfreeplus] [restartedMain] INFO  - Initializing Spring embedded WebApplicationContext
+2022-08-24 11:51:06.338 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] INFO  - Root WebApplicationContext: initialization completed in 2329 ms
+2022-08-24 11:51:07.648 - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] WARN  - 
+
+Using generated security password: 0517438d-ccf6-43e6-8fca-9af15a9999e6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-08-24 11:51:07.838 - org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33ba8254, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ff29ed0, org.springframework.security.web.context.SecurityContextPersistenceFilter@61576faf, org.springframework.security.web.header.HeaderWriterFilter@4a4d551, org.springframework.security.web.csrf.CsrfFilter@6b6e0c20, org.springframework.security.web.authentication.logout.LogoutFilter@430c1ee5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@366b4448, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22de58de, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2d3d38f9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@aeaf2d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ad2fee4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@666644a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a9cdabd, org.springframework.security.web.session.SessionManagementFilter@3c7f617e, org.springframework.security.web.access.ExceptionTranslationFilter@2070ab84, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29e29788]
+2022-08-24 11:51:07.862 - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+2022-08-24 11:51:07.863 - com.alibaba.druid.pool.DruidDataSource [restartedMain] INFO  - {dataSource-0} closing ...
+2022-08-24 11:51:07.866 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Stopping service [Tomcat]
+2022-08-24 11:51:07.888 - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 11:51:07.924 - org.springframework.boot.SpringApplication [restartedMain] ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at cn.com.reformer.KeyfreePlusApplication.main(KeyfreePlusApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.createTransactionManager(DataSourceTransactionManagerAutoConfiguration.java:68)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.transactionManager(DataSourceTransactionManagerAutoConfiguration.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.jdbc.support.JdbcTransactionManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 32 common frames omitted
+2022-08-24 11:52:24.904 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - Starting KeyfreePlusApplication using Java 1.8.0_162 on Nipppppp with PID 13636 (E:\keyfreeplus\keyfreeplus\target\classes started by Administrator in E:\keyfreeplus\keyfreeplus)
+2022-08-24 11:52:24.914 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - The following 1 profile is active: "dev"
+2022-08-24 11:52:24.951 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 11:52:24.952 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 11:52:25.609 - org.mybatis.spring.mapper.ClassPathMapperScanner [restartedMain] WARN  - No MyBatis mapper was found in '[cn.com.reformer]' package. Please check your configuration.
+2022-08-24 11:52:25.996 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] INFO  - Tomcat initialized with port(s): 8798 (http)
+2022-08-24 11:52:25.997 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-08-24 11:52:25.997 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2022-08-24 11:52:25.998 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-08-24 11:52:25.998 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-24 11:52:27.048 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2022-08-24 11:52:27.054 - org.apache.coyote.http11.Http11NioProtocol [restartedMain] INFO  - Initializing ProtocolHandler ["http-nio-8798"]
+2022-08-24 11:52:27.055 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Starting service [Tomcat]
+2022-08-24 11:52:27.055 - org.apache.catalina.core.StandardEngine [restartedMain] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:52:27.141 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/keyfreeplus] [restartedMain] INFO  - Initializing Spring embedded WebApplicationContext
+2022-08-24 11:52:27.142 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] INFO  - Root WebApplicationContext: initialization completed in 2190 ms
+2022-08-24 11:52:27.200 - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.com.reformer.mapper.AdminPermissionMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-08-24 11:52:27.203 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Stopping service [Tomcat]
+2022-08-24 11:52:27.220 - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 11:52:27.247 - org.springframework.boot.SpringApplication [restartedMain] ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminPermissionServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.com.reformer.mapper.AdminPermissionMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at cn.com.reformer.KeyfreePlusApplication.main(KeyfreePlusApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.com.reformer.mapper.AdminPermissionMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+2022-08-24 11:52:37.177 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - Starting KeyfreePlusApplication using Java 1.8.0_162 on Nipppppp with PID 4988 (E:\keyfreeplus\keyfreeplus\target\classes started by Administrator in E:\keyfreeplus\keyfreeplus)
+2022-08-24 11:52:37.180 - cn.com.reformer.KeyfreePlusApplication [restartedMain] INFO  - The following 1 profile is active: "dev"
+2022-08-24 11:52:37.248 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 11:52:37.248 - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 11:52:38.166 - org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] INFO  - Tomcat initialized with port(s): 8798 (http)
+2022-08-24 11:52:38.167 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-08-24 11:52:38.167 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2022-08-24 11:52:38.167 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-08-24 11:52:38.167 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-24 11:52:39.221 - org.apache.catalina.core.AprLifecycleListener [restartedMain] INFO  - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2022-08-24 11:52:39.228 - org.apache.coyote.http11.Http11NioProtocol [restartedMain] INFO  - Initializing ProtocolHandler ["http-nio-8798"]
+2022-08-24 11:52:39.228 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Starting service [Tomcat]
+2022-08-24 11:52:39.228 - org.apache.catalina.core.StandardEngine [restartedMain] INFO  - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-08-24 11:52:39.314 - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/keyfreeplus] [restartedMain] INFO  - Initializing Spring embedded WebApplicationContext
+2022-08-24 11:52:39.314 - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] INFO  - Root WebApplicationContext: initialization completed in 2066 ms
+2022-08-24 11:52:40.205 - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] WARN  - 
+
+Using generated security password: 41a30325-7eb6-47e0-a2a0-d320487dff3a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-08-24 11:52:40.310 - org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3be02b08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a7e0e28, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ed70b9, org.springframework.security.web.header.HeaderWriterFilter@20e60dfb, org.springframework.security.web.csrf.CsrfFilter@31e403dd, org.springframework.security.web.authentication.logout.LogoutFilter@36777f16, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@583d735, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e021d98, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@61c807e1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4584cbe4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@456ec1b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d3468e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7908a334, org.springframework.security.web.session.SessionManagementFilter@d316240, org.springframework.security.web.access.ExceptionTranslationFilter@32aff261, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12c22521]
+2022-08-24 11:52:40.323 - org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+2022-08-24 11:52:40.324 - com.alibaba.druid.pool.DruidDataSource [restartedMain] INFO  - {dataSource-0} closing ...
+2022-08-24 11:52:40.326 - org.apache.catalina.core.StandardService [restartedMain] INFO  - Stopping service [Tomcat]
+2022-08-24 11:52:40.342 - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-24 11:52:40.364 - org.springframework.boot.SpringApplication [restartedMain] ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at cn.com.reformer.KeyfreePlusApplication.main(KeyfreePlusApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.jdbc.datasource.DataSourceTransactionManager]: Factory method 'transactionManager' threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/jdbc/support/JdbcTransactionManager
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.createTransactionManager(DataSourceTransactionManagerAutoConfiguration.java:68)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration.transactionManager(DataSourceTransactionManagerAutoConfiguration.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.jdbc.support.JdbcTransactionManager
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 32 common frames omitted
